@@ -1,27 +1,26 @@
 # 1. Развёртывание и настройка Kafka-кластера в Yandex Cloud
 ## Kafka кластер:
-![/image/img_1.png](../Kafka_Nifi/image/img_1.png)
-
-![/image/img_2.png](../Kafka_Nifi/image/img_2.png)
+![Kafka cluster overview](image/img_1.png)  
+![Kafka cluster settings](image/img_2.png)
 ## Хосты:
-![/image/img_3.png](../Kafka_Nifi/image/img_3.png)
+![Kafka hosts](image/img_3.png)
 ## Пользователи:
 ![/image/img_4.png](../Kafka_Nifi/image/img_4.png)
 ## Schema Registry:
-![/image/img_5.png](../Kafka_Nifi/image/img_5.png)
+![Schema Registry settings](image/img_5.png)
 ## Файл схемы: ./test.json
 ## Скриншот ответа вызова curl http://localhost:8081/subjects
-![/image/img_8.png](../Kafka_Nifi/image/img_8.png)
+![curl subjects](image/img_8.png)
 ## Скриншот ответа вызова curl curl -X GET http://localhost:8081/subjects/<название_схемы>/versions
-![/image/img_9.png](../Kafka_Nifi/image/img_9.png)
+![curl subject versions](image/img_9.png)
 ## Топик:
-![/image/img_7.png](../Kafka_Nifi/image/img_7.png)
+![Kafka topic](image/img_7.png)
 ## Отправка сообщений в топик
 Запустите класс YandexKafkaProducer, в логах будет информация об отправленных сообщенияхю.
 ## Чтение сообщений из топика
 Запустите класс YandexKafkaConsumer, в логах будет информация о прочитанных сообщениях.
 ## Скриншоты, подтверждающие успешную передачу и чтение сообщений
-![/image/img_10.png](../Kafka_Nifi/image/img_10.png)
+![Producer/consumer logs](image/img_10.png)
 ## Вывод команды kafka-topics.sh --describe.
 команда:
 ```
@@ -31,7 +30,7 @@ curl.exe -X GET "https://rc1a-b4vq5pcf2hdbp40r.mdb.yandexcloud.net:443/topics/te
 -k
 ```
 результат:
-![img_11.png](../Kafka_Nifi/image/img_11.png)
+![kafka-topics describe](image/img_11.png)
 
 
 # 2. Интеграция Kafka с внешними системами Apache NiFi
