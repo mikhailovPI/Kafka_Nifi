@@ -5,10 +5,11 @@
 ## Хосты:
 ![Kafka hosts](image/img_3.png)
 ## Пользователи:
-![/image/img_4.png](../Kafka_Nifi/image/img_4.png)
+![Kafka users](image/img_4.png)
 ## Schema Registry:
 ![Schema Registry settings](image/img_5.png)
 ## Файл схемы: ./test.json
+![Schema Registry json](image/img_6.png)
 ## Скриншот ответа вызова curl http://localhost:8081/subjects
 ![curl subjects](image/img_8.png)
 ## Скриншот ответа вызова curl curl -X GET http://localhost:8081/subjects/<название_схемы>/versions
@@ -26,7 +27,7 @@
 ```
 curl.exe -X GET "https://rc1a-b4vq5pcf2hdbp40r.mdb.yandexcloud.net:443/topics/test-topic" `
 --user "kafka-test-user:kafka-test-pass" `
---cacert "C:\Users\abaev\.kafka\YandexInternalRootCA.crt" `
+--cacert "C:\Users\Pavel\.kafka\YandexInternalRootCA.crt" `
 -k
 ```
 результат:
