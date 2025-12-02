@@ -1,4 +1,4 @@
-package org.example;
+package ru.myproject;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.kafka.clients.consumer.*;
